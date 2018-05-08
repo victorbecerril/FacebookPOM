@@ -1,0 +1,60 @@
+Caso de prueba:  Facebook Find Friend
+
+Primer pagina:  Login
+
+Elementos:  
+Logo
+labelCorreo
+TextFieldCorreo
+LabelPassword
+TextFieldPassword
+LinkForgotPassword
+LogInButton
+campoNombre
+campoApellido
+...
+
+Metodos (pasos, verificaciones):
+VerificarDespliegueDeElementos
+logInValido
+logInInvalido
+crearCuenta
+RecuperarPassword
+
+Segunda Pagina: Home
+
+Elementos:
+LogoFacebook
+SearchField
+SearchButton
+...
+
+Metodos ()
+ValidateElements
+SearchFriend
+Logout
+...
+
+Tercera Pagina: ResultadosBusqueda
+
+Elementos:
+AddButton
+Image
+NameLink
+SeccionPersonas
+...
+
+Metodos:
+ValidateElements
+OpenProfile
+AddFriend
+CancelFriendRequest
+...
+
+
+
+
+
+
+
+
