@@ -12,11 +12,11 @@ public class FacebookTest extends FacebookBaseTest {
 	@Test
 	public void searchFriend() {
 		login.isAt();
-		login.validLogIn("usuario", "password");
+		login.validLogIn("joecool2546@mail.com", "abcde012@F");
 		home.isAt();
-		home.searchFriend("nombre", "information");
+		home.searchFriend("Raul Reza", "information");
 		searchResults.isAt();
-		searchResults.addFriend("nombre", "informatin");
+		searchResults.addFriend("nombre", "information");
 		
 		
 		

@@ -19,9 +19,24 @@ public class LogInPage {
 	WebElement lastNameTxt;
 	
 	public boolean isAt() {
-		logoFbImg = driver.findElement(By.id("idLogo"));
+		logoFbImg = driver.findElement(By.xpath("//u[text() = 'Facebook']"));
 		mailLbl = driver.findElement(By.xpath("xpathLbl"));
-		if(logoFbImg.isDisplayed() && mailLbl.isDisplayed()) {
+		mailTxt = driver.findElement(By.id("idmailtext"));
+		passLbl = driver.findElement(By.id("idpasslabel"));
+		passTxt = driver.findElement(By.id("idpasstextbox"));
+		forgotPassLnk = driver.findElement(By.id("idforgotpasslink"));
+		logInBtn = driver.findElement(By.id("idloginbtn"));
+		nameTxt = driver.findElement(By.id("idnametextbox"));
+		lastNameTxt = driver.findElement(By.id("idlastnametextbox"));
+		if(logoFbImg.isDisplayed() 
+				&& mailLbl.isDisplayed()
+				&& mailTxt.isDisplayed()
+				&& passLbl.isDisplayed()
+				&& passTxt.isDisplayed()
+				&& forgotPassLnk.isDisplayed()
+				&& logInBtn.isDisplayed()
+				&& nameTxt.isDisplayed()
+				&& lastNameTxt.isDisplayed()) {
 			return true;
 		} else {
 			return false;
